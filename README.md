@@ -28,7 +28,7 @@ Overall, this project has been a valuable experience in creating a modern and pr
 ### **Screenshots**
 
 #### Desktop View
-![Desktop Screenshot](path/to/your/desktop-screenshot.png)
+![Desktop View](Desktop_view.jpeg)
 
 #### Mobile View
-![Mobile Screenshot](path/to/your/mobile-screenshot.png)
+![Mobile View](Mobile_view.jpeg)
