@@ -27,7 +27,9 @@
   "homepage": "https://github.com/104Rajendraprasath/My-Portfolio#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "copyfiles": "^2.4.1",
     "postcss": "^8.5.6",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.1"
   }
 }
