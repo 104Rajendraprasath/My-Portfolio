@@ -4,8 +4,13 @@
   "description": "This is a personal portfolio website created using only HTML and Tailwind CSS. The purpose of this project is to serve as a professional online presence to showcase my skills, projects, and experience to potential employers and collaborators.",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf ./dist",
+    "copy-html": "copyfiles -f ./index.html ./dist",
+    "copy-folders": "copyfiles -u 1 \"images/**/*\" \"resume/**/*\" ./dist",
+    "copy-assets": "npm run copy-html && npm run copy-folders",
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --minify",
+    "build": "npm run clean && npm run copy-assets && npm run build:css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "repository": {
