@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "This is a personal portfolio website created using only HTML and Tailwind CSS. The purpose of this project is to serve as a professional online presence to showcase my skills, projects, and experience to potential employers and collaborators.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/104Rajendraprasath/My-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/104Rajendraprasath/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/104Rajendraprasath/My-Portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.1"
+  }
+}
