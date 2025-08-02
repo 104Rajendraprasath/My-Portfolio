@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rajendraprasath M - Portfolio</title>
     <link rel="icon" type="image/png" href="./images/logo.png" />
-    <!-- <link href="./dist/output.css" rel="stylesheet"> -->
     <link href="./dist/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <!-- Required for technology icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
     <!-- Header & Navigation -->
-    <header class="bg-gray-900 sticky top-0 z-50">
+    <header class="bg-gray-900 sticky top-0 z-50 shadow-lg shadow-cyan-500/10">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold">Rajendraprasath M</a>
             <div class="hidden md:flex space-x-6">
                 <a href="#home" class="hover:text-cyan-400">Home</a>
-                <a href="#about" class="hover:text-cyan-400">About</a>
+                <a href="#skills" class="hover:text-cyan-400">Skills</a>
+                <a href="#experience" class="hover:text-cyan-400">Experience</a>
                 <a href="#projects" class="hover:text-cyan-400">Projects</a>
+                <a href="#certifications" class="hover:text-cyan-400">Certifications</a>
                 <a href="#contact" class="hover:text-cyan-400">Contact</a>
             </div>
             <!-- Mobile Menu Button -->
@@ -28,124 +32,320 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden">
             <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-700">Home</a>
-            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-700">Skills</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-gray-700">Experience</a>
             <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+            <a href="#certifications" class="block py-2 px-4 text-sm hover:bg-gray-700">Certifications</a>
             <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
         </div>
     </header>
 
     <!-- Home Section -->
-    <section id="home" class="container mx-auto px-6 py-24 flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2">
-            <h1 class="text-4xl md:text-6xl font-bold">Rajendraprasath M</h1>
+    <section id="home" class="container mx-auto px-6 py-24 flex flex-col-reverse md:flex-row items-center min-h-screen">
+        <div class="md:w-3/5 text-center md:text-left">
             <h2 class="text-2xl md:text-3xl text-cyan-400 mt-2">Computer Science Student</h2>
-            <p class="mt-4 text-lg">Eager to leverage my skills in programming and problem-solving through an internship to contribute to impactful projects.</p>
-            <a  href="resume.pdf" download="Rajendraprasath_M_Resume.pdf" class="mt-8 inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Download Resume</a>
+            <h1 class="text-4xl md:text-6xl font-bold mt-2">RAJENDRAPRASATH M</h1>
+            <p class="mt-6 text-lg text-gray-300">A Motivated computer Science student with hands-on experience in software development and AI. Eager to leverage my skills in programming and problem-solving through an internship position to gain real world experience and contribute to impactful projects.</p>
+            <a href="./resume.pdf" download="Rajendraprasath_M_Resume.pdf" class="mt-8 inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Download Resume</a>
         </div>
-        <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+        <div class="md:w-2/5 mt-8 md:mt-0 flex justify-center">
             <img src="./images/avatar.png" alt="Rajendraprasath M" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover object-top shadow-2xl shadow-cyan-500/40">
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="bg-gray-800 py-20">
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-800 py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center gap-10">
-                <div class="md:w-2/3">
-                    <p class="text-lg mb-4">I am a dedicated Computer Science student with a strong foundation in software development, AI, and machine learning. My hands-on experience includes contributing to open-source projects and developing practical applications that solve real-world problems.</p>
-                    <p class="text-lg">My goal is to secure an internship where I can apply my skills in a professional environment, continue learning from experienced developers, and contribute meaningfully to innovative projects.</p>
-                </div>
-                <div class="md:w-1/3">
-                    <div class="bg-gray-700 p-6 rounded-lg">
-                        <h3 class="text-xl font-bold mb-4">Key Skills</h3>
-                        <ul class="list-disc list-inside">
-                            <li>Java, Python, C</li>
-                            <li>HTML, CSS, JavaScript, React</li>
-                            <li>MySQL, MongoDB</li>
-                            <li>Machine Learning & Deep Learning</li>
-                        </ul>
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+            <!-- ALIGNMENT FIX: Standardized width for content sections -->
+            <div class="max-w-5xl mx-auto space-y-8">
+                <!-- Frontend -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-cyan-400">Frontend</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="HTML5"><i class="devicon-html5-plain text-2xl mr-2"></i> HTML</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="CSS3"><i class="devicon-css3-plain text-2xl mr-2"></i> CSS</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="JavaScript"><i class="devicon-javascript-plain text-2xl mr-2"></i> JavaScript</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="React"><i class="devicon-react-original text-2xl mr-2"></i> React.js</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="React Native"><i class="devicon-react-original text-2xl mr-2"></i> React Native</span>
                     </div>
                 </div>
-            </div>
-            <div class="mt-12">
-                <h3 class="text-2xl font-bold mb-4">Education & Experience</h3>
-                <div class="border-l-4 border-cyan-500 pl-4">
-                    <div class="mb-8">
-                        <h4 class="text-xl font-bold">Bachelor of Computer Science and Engineering</h4>
-                        <p class="text-gray-400">University College Of Engineering, BIT-Campus | CGPA: 8.17</p>
+                <!-- Backend -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-cyan-400">Backend</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="Python"><i class="devicon-python-plain text-2xl mr-2"></i> Python</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="Django"><i class="devicon-django-plain text-2xl mr-2"></i> Django</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="Node.js"><i class="devicon-nodejs-plain text-2xl mr-2"></i> Node.js</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="Express.js"><i class="devicon-express-original text-2xl mr-2"></i> Express.js</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="Java"><i class="devicon-java-plain text-2xl mr-2"></i> Java</span>
                     </div>
-                    <div class="mb-8">
-                        <h4 class="text-xl font-bold">Open Source Contributor</h4>
-                        <p class="text-gray-400">GSOC 2024</p>
+                </div>
+                <!-- Database -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-cyan-400">Database</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="MySQL"><i class="devicon-mysql-plain text-2xl mr-2"></i> MySQL</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="MongoDB"><i class="devicon-mongodb-plain text-2xl mr-2"></i> MongoDB</span>
                     </div>
-                    <div>
-                        <h4 class="text-xl font-bold">Cyber Security Internship</h4>
-                        <p class="text-gray-400">AICTE</p>
+                </div>
+                 <!-- DevOps & Tools -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-cyan-400">DevOps & CI/CD Tools</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="Git"><i class="devicon-git-plain text-2xl mr-2"></i> Git/GitHub</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="GitHub Actions"><i class="devicon-githubactions-plain text-2xl mr-2"></i> GitHub Actions</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="Docker"><i class="devicon-docker-plain text-2xl mr-2"></i> Docker</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="Kubernetes"><i class="devicon-kubernetes-plain text-2xl mr-2"></i> Kubernetes</span>
+                        <span class="flex items-center bg-gray-700 rounded-lg px-4 py-2" title="Jenkins"><i class="devicon-jenkins-line text-2xl mr-2"></i> Jenkins</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20">
+    <!-- Experience & Education Section -->
+    <section id="experience" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50">
+            <h2 class="text-3xl font-bold text-center mb-12">Internships & Education</h2>
+            <!-- ALIGNMENT FIX: Standardized width for content sections -->
+            <div class="max-w-5xl mx-auto">
+                <!-- Internships -->
+                <div class="mb-16">
+                     <h3 class="text-2xl font-semibold mb-6 text-center text-cyan-400">Internship Experience</h3>
+                     <div class="space-y-8">
+                        <!-- Internship 1 -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                            <div class="flex flex-col sm:flex-row justify-between items-start">
+                                 <h4 class="text-xl font-bold">Mobile Application Development</h4>
+                                 <span class="text-sm text-gray-400 mt-1 sm:mt-0">June 2025 - July 2025</span>
+                            </div>
+                            <p class="text-cyan-300 mt-1">Shahar Technologies OPC Private Limited | Madurai, Tamil Nadu</p>
+                            <ul class="list-disc list-inside mt-4 text-gray-300 space-y-2">
+                                 <li>Developed cross-platform mobile application features using React Native.</li>
+                                 <li>Integrated Firebase for real-time database and authentication.</li>
+                            </ul>
+                        </div>
+                         <!-- Internship 2 -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                            <div class="flex flex-col sm:flex-row justify-between items-start">
+                                 <h4 class="text-xl font-bold">Cyber Security Intern</h4>
+                                 <span class="text-sm text-gray-400 mt-1 sm:mt-0">March 2025 - June 2025</span>
+                            </div>
+                            <p class="text-cyan-300 mt-1">Learnflu (Remote)</p>
+                            <ul class="list-disc list-inside mt-4 text-gray-300 space-y-2">
+                                 <li>Gained hands-on experience with network security, ethical hacking, and threat analysis.</li>
+                                 <li>Performed vulnerability scanning and basic penetration testing using Kali Linux tools.</li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+                <!-- Education -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-center text-cyan-400">Education</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                            <p class="text-sm text-gray-400">2022 - Present</p>
+                            <h4 class="text-xl font-bold mt-1">Bachelor of Engineering - Computer Science</h4>
+                            <p class="text-gray-300 mt-2">University College of Engineering, BIT Campus, Tiruchirapalli</p>
+                        </div>
+                         <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                            <p class="text-sm text-gray-400">2021 - 2022</p>
+                            <h4 class="text-xl font-bold mt-1">HSC (84%)</h4>
+                            <p class="text-gray-300 mt-2">Palaniyappa Memorial Higher Secondary School, Theni</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Freelance Projects Section -->
+    <section id="projects" class="bg-gray-800 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Freelance Projects</h2>
+             <!-- ALIGNMENT FIX: Standardized width for content sections -->
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: E-Commerce Website -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50">
                     <img src="./images/project1.png" alt="E-Commerce Website" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Famous E-Commerce WebSite</h3>
-                        <p class="text-gray-400 mb-4">A clone of Famous E-Commerce WebSite using Fake RestAPI and Django</p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/104Rajendraprasath/E-Commerce-Website-Clone.git" class="text-cyan-400 hover:underline">GitHub Repo</a>
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Website Clone</h3>
+                        <p class="text-gray-400 mb-4">A clone of a famous E-commerce Website which allows users to signin, signup, view products, add to cart, and checkout.</p>
+                        <p class="text-sm text-cyan-200">Tech: MERN Stack, TailwindCSS, Render, Netlify</p>
                     </div>
                 </div>
-                <!-- Project 2 -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50">
-                    <img src="./images/project2.png" alt="Complete Email System" class="w-full h-48 object-cover">
+                <!-- Project 2: Food Ordering App -->
+                <div class=" bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 ">
+                    <img src="./images/Food Ordering App.jpg" alt="Food Ordering App" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">A Full Stack Email System</h3>
-                        <p class="text-gray-400 mb-4">A Complete Email System with FrontEnd and BackEnd</p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/104Rajendraprasath/MyEmailSystem.git" class="text-cyan-400 hover:underline">GitHub Repo</a>
+                        <h3 class="text-xl font-bold mb-2">Food Ordering App</h3>
+                        <p class="text-gray-400 mb-4">Users can sign in, view offers, browse restaurants, add food to cart, place orders, and track order details.</p>
+                        <p class="text-sm text-cyan-200">Tech: React Native, Node.js, Express.js, MongoDB</p>
                     </div>
                 </div>
-                <!-- Project 3 -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50">
-                    <img src="./images/project3.png" alt="Chatbox for Citizens-Police,Health-care" class="w-full h-48 object-cover">
+                 <!-- Project 3: Full Stack Email System -->
+                 <div class="bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50">
+                    <img src="./images/project2.png" alt="Full Stack Email System" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Chatbot for Citizens-Police, Health-care</h3>
-                        <p class="text-gray-400 mb-4">An intelligent chatbot to assist citizens with inquiries for police and healthcare services.</p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/104Rajendraprasath/copbot_chatbot.git" class="text-cyan-400 hover:underline">GitHub Repo</a>
+                        <h3 class="text-xl font-bold mb-2">Full Stack Email System</h3>
+                        <p class="text-gray-400 mb-4">Allows users to compose, receive, archive, and draft emails with real-time notifications for new mail.</p>
+                        <p class="text-sm text-cyan-200">Tech: React.js, Python, Django, RestAPI</p>
+                    </div>
+                </div>
+                <!-- CONTENT FIX: Corrected description to match title -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50">
+                    <img src="./images/project4.jpeg" alt="MERN Stack Flipkart Clone" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">MERN Stack Flipkart Clone</h3>
+                        <p class="text-gray-400 mb-4">Allows users to sign in, sign up, view products, add products to cart, and place orders.</p>
+                        <p class="text-sm text-cyan-200">Tech: React.js, Node.js, Express.js, MongoDB</p>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50">
+                    <img src="./images/project3.png" alt="ChatBot For Police-Citizens" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">ChatBot For Police-Citizens</h3>
+                        <p class="text-gray-400 mb-4">An intelligent chatbot to inform citizens about laws, rules, and emergency procedures.</p>
+                        <p class="text-sm text-cyan-200">Tech: React.js, Python, Flask, RestAPI</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Achievements Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Achievements</h2>
+            <!-- ALIGNMENT FIX: Standardized width for content sections -->
+            <div class="max-w-5xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+                <ul class="list-disc list-inside space-y-4 text-lg text-gray-300">
+                    <li>Participated in National Cadet Corps (NCC) and trained 50+ cadets to become next-generation leaders.</li>
+                    <li>Selected as an open-source contributor for Google Summer of Code (GSOC) 2024.</li>
+                    <li>Gained real-world project experience with Shahar Technologies OPC Private Limited and Learnflu.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+   <!-- Certifications Section -->
+<section id="certifications" class="bg-gray-800 py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Certifications & Courses</h2>
+        <p class="text-center text-gray-400 mb-8 -mt-4">Click on any card to view the full certificate.</p>
+        
+        <!-- ALIGNMENT FIX: Standardized width for content sections -->
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1: Cyber Security -->
+            <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/cyber security.png">
+                <img src="./images/certs/cyber security.png" alt="Cyber Security Certification" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">Cyber Security Internship</h3>
+                </div>
+            </div>
+
+            <!-- Card 2: MERN Stack -->
+            <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/MERN Stack.png">
+                <img src="./images/certs/MERN Stack.png" alt="MERN Stack Bootcamp" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">MERN Stack Bootcamp</h3>
+                </div>
+            </div>
+
+            <!-- Card 3: TailwindCSS -->
+            <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/TAILWINDCSS.png">
+                <img src="./images/certs/TAILWINDCSS.png" alt="Tailwind CSS Bootcamp" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">TailwindCSS Bootcamp</h3>
+                </div>
+            </div>
+
+            <!-- Card 4: GraphQL -->
+            <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/GraphQl.jpeg">
+                <img src="./images/certs/GraphQl.jpeg" alt="GraphQL Bootcamp" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">GraphQL Bootcamp</h3>
+                </div>
+            </div>
+
+            <!-- Card 5: TRIE Bootcamp -->
+            <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/Trie Bootcamp.png">
+                <img src="./images/certs/Trie Bootcamp.png" alt="TRIE Data Structure Bootcamp" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">TRIE Data Structure Bootcamp</h3>
+                </div>
+            </div>
+
+            <!-- Card 6: TRIE Project -->
+            <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/Trie Google.jpeg">
+                <img src="./images/certs/Trie Google.jpeg" alt="TRIE Project Completion" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">TRIE Project Completion</h3>
+                </div>
+            </div>
+
+              <!-- Card 6: TRIE Project -->
+              <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/Trie Google.jpeg">
+                <img src="./images/certs/Trie Microsoft.jpeg" alt="TRIE Project Completion" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">TRIE Project Completion</h3>
+                </div>
+            </div>
+
+              <!-- Card 6: TRIE Project -->
+              <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/Trie Google.jpeg">
+                <img src="./images/certs/Microsoft.jpeg" alt="TRIE Project Completion" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">TAILWINDCSS Project Completion</h3>
+                </div>
+            </div>
+
+              <!-- Card 6: TRIE Project -->
+              <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/Trie Google.jpeg">
+                <img src="./images/certs/TAILWINDCSS Google.jpeg" alt="TRIE Project Completion" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">TAILWINDCSS Project Completion</h3>
+                </div>
+            </div>
+
+            <!-- Card 7: Full Stack -->
+            <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/fullstack.png">
+                <img src="./images/certs/Full Stack.jpeg" alt="Full Stack Development Course" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">Full Stack Development</h3>
+                </div>
+            </div>
+
+            <!-- Card 8: DevOps -->
+            <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/devops.png">
+                <img src="./images/certs/DevOps Tools.jpeg" alt="DevOps Tools Course" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">DevOps Tools</h3>
+                </div>
+            </div>
+
+            <!-- Card 9: AWS -->
+            <div class="cert-card bg-gray-700 rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer" data-img-src="./images/certs/aws.png">
+                <img src="./images/certs/aws.png" alt="AWS Certification from Simplilearn" class="w-full h-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-center">AWS Certified Cloud Practitioner</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-800 py-20">
+    <section id="contact" class="py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-4">Contact Me</h2>
             <p class="text-center text-lg text-gray-400 mb-12">Feel free to reach out. I'm always open to connecting!</p>
-            
-            <div class="max-w-lg mx-auto">
-                <!-- This container for social links is what we updated -->
-                <div class="flex justify-center space-x-8">
-                    <!-- GitHub Icon -->
-                    <a href="https://github.com/104Rajendraprasath" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition duration-300" title="GitHub">
-                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.837 9.488.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
-                    </a>
-                    <!-- LinkedIn Icon -->
-                    <a href="https://www.linkedin.com/in/rajendraprasath-m-raj104/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition duration-300" title="LinkedIn">
-                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </a>
-                    <!-- Email Icon -->
-                    <a href="mailto:prasathrajendra2000@gmail.com" class="text-gray-400 hover:text-cyan-400 transition duration-300" title="Email">
-                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" /><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" /></svg>
-                    </a>
-                </div>
+            <div class="flex justify-center space-x-8">
+                <a href="https://github.com/104Rajendraprasath" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition duration-300" title="GitHub"><svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.837 9.488.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg></a>
+                <a href="https://www.linkedin.com/in/rajendraprasath-m-raj104/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition duration-300" title="LinkedIn"><svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                <a href="mailto:prasathrajendra2000@gmail.com" class="text-gray-400 hover:text-cyan-400 transition duration-300" title="Email"><svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" /><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" /></svg></a>
             </div>
         </div>
     </section>
@@ -156,12 +356,54 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
+        // --- Mobile menu toggle ---
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
+    
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+    
+        // --- Image Modal Logic ---
+        const imageModal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-img');
+        const closeModal = document.getElementById('close-modal');
+        const certCards = document.querySelectorAll('.cert-card');
+    
+        // Function to open the modal
+        const openModal = (imgSrc) => {
+            modalImg.src = imgSrc;
+            imageModal.classList.remove('hidden');
+        };
+    
+        // Function to close the modal
+        const closeModalHandler = () => {
+            imageModal.classList.add('hidden');
+            modalImg.src = ""; // Clear src to stop loading in background
+        };
+    
+        // Add click event to each certification card
+        certCards.forEach(card => {
+            card.addEventListener('click', () => {
+                openModal(card.dataset.imgSrc);
+            });
+        });
+    
+        // Add click event to close button
+        closeModal.addEventListener('click', closeModalHandler);
+    
+        // Add click event to modal background to close it
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                closeModalHandler();
+            }
+        });
+    
+        // Add keyboard event to close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !imageModal.classList.contains('hidden')) {
+                closeModalHandler();
+            }
         });
     </script>
 
